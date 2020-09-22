@@ -2,7 +2,6 @@
 #================================
 from random import *
 #================================
-#seed()
 
 while True:
   Eingabe = input ('Wieviele Zeichen soll das Passwort habe: ')  
