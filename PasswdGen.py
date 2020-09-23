@@ -13,7 +13,7 @@ while True:
   except ValueError:
       print("Haha, witzig, das ist keine Zahl!")
   else:
-    print("Höma, red ich chinesisch? 你这笨蛋！Eine Zahl zwischen 10 und 32, verdammt! Los, nochma!")
+    print("Höma, red ich chinesisch? 你这笨蛋！Eine Zahl zwischen 12 und 32, verdammt! Los, nochma!")
 
 tmp_passwd = []
 i = 0
