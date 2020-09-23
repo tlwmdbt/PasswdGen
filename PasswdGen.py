@@ -23,4 +23,4 @@ for i in range(0, int_Eingabe):
   tmp_passwd.append(element)
   password = "".join(tmp_passwd)  
   i = i + 1  
-print(password)
+print("\n", password, "\n")
