@@ -6,14 +6,14 @@ while True:
   Eingabe = input("Wieviele Stellen soll das Passwort haben: ")
   try:
       int_Eingabe = int(Eingabe)
-      if int_Eingabe <= 0 or int_Eingabe > 32:
-          print('Bitte nur positive Zahlen kleiner 32 eingeben!')
+      if int_Eingabe < 12 or int_Eingabe > 32:
+          print('Alter! Nur Zahlen zwischen 12 und 32! OK?!')
           continue
       break
   except ValueError:
       print("Haha, witzig, das ist keine Zahl!")
   else:
-    print("Was auch immer du jetzt wieder eingegeben hast das war keine gülltige Eingabe!")
+    print("Höma, red ich chinesisch? 你这笨蛋！ Los, nochmal! Eine Zahl zwischen 10 und 32, verdammt!")
 
 tmp_passwd = []
 i = 0
