@@ -25,19 +25,19 @@ while True:
 # Initialize the random generator from OS specific random device
 while True:
   try:
-    # check if urandom is working
-    # 
+    # check if /dev/urandom is working
+    # If it exist (no error is produced) it is used to seed the python random generator later used
     from os import urandom
     seed(int.from_bytes(urandom(100), byteorder='big', signed=False))
     print("Benutze /dev/urandom.")
     break
   except ImportError:
-    # module not available, so use standard randint
+    # module not available, so use standard randint (should be also secure)
     print("Benutze standard randint().")
     seed(randint(1, 1000))
     break
   else:
-    # all other cases, bye ¯\_(ツ)_/¯ 
+    # all other cases, kill -9 this script - bye bye ¯\_(ツ)_/¯ 
     print("Kein random möglich.")
     raise SystemExit
 
