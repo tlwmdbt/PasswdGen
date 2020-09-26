@@ -32,8 +32,7 @@ while True:
     print("Benutze /dev/urandom.")
     break
   except ImportError:
-    # module not available, so use standard randint (should be also secure)
-    print("Benutze standard randint().")
+    # module not available, so use standard method (should be also secure)
     break
   else:
     # all other cases, kill -9 this script - bye bye ¯\_(ツ)_/¯ 
