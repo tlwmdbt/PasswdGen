@@ -34,7 +34,6 @@ while True:
   except ImportError:
     # module not available, so use standard randint (should be also secure)
     print("Benutze standard randint().")
-    seed(randint(1, 1000))
     break
   else:
     # all other cases, kill -9 this script - bye bye ¯\_(ツ)_/¯ 
